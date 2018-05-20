@@ -1,0 +1,40 @@
+<html>
+   <head>
+   	<link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <form name="calculator" id="calculator">
+         <table style="background-color: #ccf5ff">
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="displaybox" id="displaybox" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" class="number" name="one" value="1" onclick="calculator.displaybox.value += '1'"></td>
+               <td><input type="button" class="number" name="two" value="2" onclick="calculator.displaybox.value += '2'"></td>
+               <td><input type="button" class="number" name="three" value="3" onclick="calculator.displaybox.value += '3'"></td>
+               <td><input type="button" class="btn" name="plus" value="+" onclick="calculator.displaybox.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" class="number" name="four" value="4" onclick="calculator.displaybox.value += '4'"></td>
+               <td><input type="button" class="number" name="five" value="5" onclick="calculator.displaybox.value += '5'"></td>
+               <td><input type="button" class="number" name="six" value="6" onclick="calculator.displaybox.value += '6'"></td>
+               <td><input type="button" class="btn" name="minus" value="-" onclick="calculator.displaybox.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" class="number" name="seven" value="7" onclick="calculator.displaybox.value += '7'"></td>
+               <td><input type="button" class="number" name="eight" value="8" onclick="calculator.displaybox.value += '8'"></td>
+               <td><input type="button" class="number" name="nine" value="9" onclick="calculator.displaybox.value += '9'"></td>
+               <td><input type="button" class="btn" name="multiply" value="/" onclick="calculator.displaybox.value += '/'"></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td><input type="button" class="number" name="zero" value="0" onclick="calculator.displaybox.value += '0'"></td>
+               <td><input type="button" class="btn" name="result" value="=" onclick="calculator.displaybox.value = eval(calculator.displaybox.value)"></td>
+               <td><input type="button" class="btn" name="division" value="*" onclick="calculator.displaybox.value += '*'"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+ </html>
